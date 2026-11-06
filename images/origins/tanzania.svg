@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2B66B"/><stop offset=".7" stop-color="#F8DDA8"/></linearGradient></defs>
+  <rect width="400" height="220" fill="url(#s)"/>
+  <circle cx="90" cy="70" r="24" fill="#FBE7B4"/>
+  <path d="M60 150 L170 72 Q200 56 230 72 L360 150Z" fill="#8C6E86"/>
+  <path d="M164 78 Q200 54 236 78 L222 86 L208 78 L196 90 L184 80 L174 88Z" fill="#FFFBF2"/>
+  <path d="M0 150 Q100 136 200 146 T400 142 V220 H0Z" fill="#C9A04E"/>
+  <path d="M0 180 Q140 166 260 178 T400 174 V220 H0Z" fill="#A9813A"/>
+  <g transform="translate(300 150)" fill="#4A3A24">
+    <rect x="-3" y="-34" width="6" height="40"/>
+    <path d="M0 -30 L-18 -44 M0 -30 L18 -46" stroke="#4A3A24" stroke-width="4"/>
+    <ellipse cx="0" cy="-50" rx="52" ry="11"/>
+  </g>
+  <g transform="translate(70 166)" fill="#4A3A24">
+    <ellipse cx="0" cy="0" rx="16" ry="9"/><rect x="-12" y="4" width="3" height="14"/><rect x="8" y="4" width="3" height="14"/>
+    <path d="M12 -4 L22 -34 L27 -34 L20 -2Z"/><ellipse cx="25" cy="-36" rx="6" ry="4"/>
+  </g>
+</svg>

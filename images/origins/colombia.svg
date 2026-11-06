@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E4062"/><stop offset="1" stop-color="#8A9AB0"/></linearGradient></defs>
+  <rect width="400" height="220" fill="url(#s)"/>
+  <path d="M332 40 a22 22 0 1 0 14 38 a18 18 0 1 1 -14 -38z" fill="#F6E7B8"/>
+  <g fill="#F6E7B8"><circle cx="60" cy="40" r="1.5"/><circle cx="120" cy="24" r="1.2"/><circle cx="200" cy="50" r="1.5"/><circle cx="260" cy="20" r="1.2"/><circle cx="40" cy="80" r="1"/></g>
+  <path d="M0 140 L50 70 L90 110 L150 50 L210 120 L260 80 L320 130 L400 90 V220 H0Z" fill="#3F5B4A"/>
+  <path d="M0 170 Q60 120 130 150 T260 140 T400 150 V220 H0Z" fill="#4E7552"/>
+  <g stroke="#2F4A36" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8">
+    <path d="M10 186 Q70 150 130 172 T260 164 T400 172"/><path d="M0 204 Q70 170 130 190 T260 182 T400 190"/>
+  </g>
+  <g fill="#1F3527">
+    <g transform="translate(90 170)"><rect x="-2" y="-100" width="4" height="100"/><path d="M0 -100 q-22 -2 -30 12 q14 -8 30 -8z M0 -100 q22 -4 30 10 q-14 -6 -30 -6z M0 -100 q-6 -18 -20 -22 q8 10 20 18z M0 -100 q8 -18 22 -20 q-10 10 -22 16z"/></g>
+    <g transform="translate(300 176)"><rect x="-2" y="-120" width="4" height="120"/><path d="M0 -120 q-22 -2 -30 12 q14 -8 30 -8z M0 -120 q22 -4 30 10 q-14 -6 -30 -6z M0 -120 q-6 -18 -20 -22 q8 10 20 18z M0 -120 q8 -18 22 -20 q-10 10 -22 16z"/></g>
+  </g>
+</svg>
