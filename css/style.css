@@ -1234,3 +1234,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 @media (max-width: 360px) { .roast-steps-names li { font-size: 10.5px; } }
 .roast-steps-names { column-gap: 4px; }
 .roast-steps-names li { font-size: min(12px, 2.75vw); letter-spacing: -.02em; }
+.page-contact .contact-grid { grid-template-columns: 1fr; max-width: 720px; margin-inline: auto; }
