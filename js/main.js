@@ -381,7 +381,7 @@
   if (heroText) {
     var note = document.createElement("p");
     note.className = "prelaunch-note";
-    note.innerHTML = '<span class="prelaunch-label">OPEN準備中</span>オンラインショップは、ただいまオープンに向けて準備をしています。';
+    note.innerHTML = '<span class="prelaunch-label">OPEN準備中</span><span class="nobr">当店はオンラインショップのみの販売です。</span><span class="nobr">ただいまオープンに向けて準備をしています。</span>';
     heroText.insertBefore(note, heroText.firstChild);
   }
 })();
