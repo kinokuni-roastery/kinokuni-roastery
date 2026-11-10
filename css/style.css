@@ -1239,3 +1239,18 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .shop-only { width: fit-content; max-width: 100%; }
 .prelaunch-note .nobr + .nobr { flex-basis: 100%; }
 .bp-blendof .kari { font-style: normal; margin-left: 8px; vertical-align: middle; }
+
+/* トップ：焙煎所について（背景イラスト） */
+#about { background: #FBF7EE url("../images/about-bg.webp") center bottom / cover no-repeat; }
+#about::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(251,247,238,.55), rgba(251,247,238,.35) 60%, rgba(251,247,238,.15)); pointer-events: none; }
+#about { position: relative; }
+#about > * { position: relative; }
+@media (max-width: 800px) {
+  #about { background: url("../images/about-bg.webp") left top / 170% auto no-repeat, url("../images/about-bg.webp") center bottom / 170% auto no-repeat, #FBF7EE; }
+}
+@media (max-width: 800px) {
+  #about { background:
+    linear-gradient(#FBF7EE, rgba(251,247,238,0)) center calc(100% - 230px) / 100% 160px no-repeat,
+    url("../images/about-bg.webp") center bottom / 190% auto no-repeat,
+    #FBF7EE; }
+}
