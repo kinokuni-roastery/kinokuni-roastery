@@ -1264,3 +1264,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 }
 #about::before { background: linear-gradient(rgba(251,247,238,.35), rgba(251,247,238,.2) 60%, rgba(251,247,238,.05)); }
 @media (max-width: 800px) { #about::before { background: rgba(251,247,238,.12); } }
+#blend-1 .bp-label { background: #2B1C14; color: #fff; }
