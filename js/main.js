@@ -248,7 +248,8 @@
           return k === 0 ? '<span class="bp-point-head" style="--n:' + l.length + '">' + esc(l) + "</span>" : esc(l);
         }).join("\n") + "</p>" : "") +
         '<div class="bp-desc">' + lines + "</div>" +
-        (item.blendOf ? '<p class="bp-blendof"><span>配合</span>' + esc(item.blendOf) + "</p>" : "") +
+        (item.blendOf ? '<p class="bp-blendof"><span>配合</span><b class="bp-blendof-text">' + esc(item.blendOf) +
+          (item.blendOfConfirmed === false ? '<i class="kari" title="仮の内容です">仮</i>' : "") + "</b></p>" : "") +
         '<div class="bp-rec bp-rec-kino"><img src="images/squirrel.png" alt="" width="96" height="70" loading="lazy">' +
           '<div class="bp-rec-bubble"><p class="bp-rec-name">きの子</p><h3>こんな方におすすめだよ</h3><ul>' + rec + "</ul></div></div>" +
         '<div class="bp-foot">' + priceKari() + '<div class="prices">' + prices + "</div>" +

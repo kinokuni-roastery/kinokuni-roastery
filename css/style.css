@@ -1238,3 +1238,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .shop-only { display: inline-block; margin-bottom: 10px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.9); color: var(--forest); font-family: var(--font-round); font-weight: 500; font-size: 15px; }
 .shop-only { width: fit-content; max-width: 100%; }
 .prelaunch-note .nobr + .nobr { flex-basis: 100%; }
+.bp-blendof .kari { font-style: normal; margin-left: 8px; vertical-align: middle; }
