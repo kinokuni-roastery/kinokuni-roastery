@@ -1266,3 +1266,8 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 @media (max-width: 800px) { #about::before { background: rgba(251,247,238,.12); } }
 #blend-1 .bp-label { background: #2B1C14; color: #fff; }
 #blend-2 .bp-label { background: #A8754B; color: #fff; }
+/* トップの吹き出し：右側に配置 */
+.hero-visual .hero-bubble { width: fit-content; max-width: 66%; margin-left: auto; margin-right: 0; align-self: flex-end; }
+.hero-visual .hero-bubble::after { left: 28%; }
+@media (max-width: 800px) { .hero-visual .hero-bubble { max-width: 82%; } }
+.hero-visual .hero-bubble .nobr { white-space: nowrap; }
