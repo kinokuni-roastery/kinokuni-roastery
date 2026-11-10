@@ -1271,3 +1271,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .hero-visual .hero-bubble::after { left: 28%; }
 @media (max-width: 800px) { .hero-visual .hero-bubble { max-width: 82%; } }
 .hero-visual .hero-bubble .nobr { white-space: nowrap; }
+.hero-eyebrow { font-size: clamp(18px, 1.9vw, 21px); }
