@@ -1254,3 +1254,11 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
     url("../images/about-bg.webp") center bottom / 190% auto no-repeat,
     #FBF7EE; }
 }
+@media (max-width: 800px) {
+  #about { background:
+    linear-gradient(#FBF7EE, rgba(251,247,238,0)) 0 130px / 100% 70px no-repeat,
+    linear-gradient(rgba(251,247,238,0), #FBF7EE) 0 470px / 100% 90px no-repeat,
+    url("../images/about-bg.webp") 30% 130px / 170% auto no-repeat,
+    #FBF7EE; }
+  #about::before { background: rgba(251,247,238,.35); }
+}
