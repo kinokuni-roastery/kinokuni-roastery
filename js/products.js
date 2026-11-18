@@ -192,7 +192,7 @@ const TERMS = {
 const STANDARD_BLENDS = [
   {
     name: "木もれ日ブレンド",
-    image: "images/origins/komorebi.svg",   // 商品の画像（差し替えるときはファイル名を変更）
+    image: "images/blend/komorebi.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "木もれ日の森",
     scene: "毎日の一杯が、ちょっと楽しみになる",   // キャッチフレーズ
     tasteConfirmed: false,   // 焙煎度・味わいのイメージが確定したら true に
@@ -211,7 +211,7 @@ const STANDARD_BLENDS = [
 const MILK_BLENDS = [
   {
     name: "木もれ日ミルクブレンド",
-    image: "images/origins/milk.svg",   // 商品の画像（差し替えるときはファイル名を変更）
+    image: "images/blend/milk.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "カフェオレとミルク",
     howto: "カフェオレ・カフェラテ",
     tasteConfirmed: false,   // 焙煎度・味わいのイメージが確定したら true に
@@ -253,7 +253,7 @@ const BLEND_PAGE = [
       "ブラックコーヒーが好きな方",
       "バランスのよい味わいが好きな方"
     ],
-    image: "images/origins/komorebi.svg",
+    image: "images/blend/komorebi.webp",
     imageAlt: "木もれ日ブレンドのコーヒー豆",
     prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
     shopLink: "https://kinokuni.stores.jp/items/standard-blend"   // ★仮のリンク
@@ -275,7 +275,7 @@ const BLEND_PAGE = [
       "ミルクをたっぷり入れて飲む方",
       "コクのあるコーヒーが好きな方"
     ],
-    image: "images/origins/milk.svg",
+    image: "images/blend/milk.webp",
     imageAlt: "木もれ日ミルクブレンドのコーヒー豆とミルク",
     prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
     shopLink: "https://kinokuni.stores.jp/items/milk-blend"   // ★仮のリンク
