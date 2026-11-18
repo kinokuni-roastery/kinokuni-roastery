@@ -1274,3 +1274,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .hero-eyebrow { font-size: clamp(18px, 1.9vw, 21px); }
 /* ブレンドの水彩イラスト（3:2）を切らずに表示 */
 .bp-image img, #blend-1 .bp-image img { aspect-ratio: 3 / 2; object-position: center; }
+.bp-label { top: 10px; left: 12px; }
