@@ -1275,3 +1275,6 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 /* ブレンドの水彩イラスト（3:2）を切らずに表示 */
 .bp-image img, #blend-1 .bp-image img { aspect-ratio: 3 / 2; object-position: center; }
 .bp-label { top: 10px; left: 12px; }
+/* 商品名を1行に（文字間を詰めて、カードの幅に合わせて縮める） */
+.bp-body { container-type: inline-size; }
+.bp-name { letter-spacing: .02em; white-space: nowrap; font-size: min(27px, 8.4cqi); }
