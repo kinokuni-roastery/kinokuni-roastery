@@ -1279,3 +1279,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .bp-body { container-type: inline-size; }
 .bp-name { letter-spacing: .02em; white-space: nowrap; font-size: min(27px, 8.4cqi); }
 .page-intro br.br-keep { display: inline; }
+.bp-name { font-size: min(27px, 7.6cqi); }
