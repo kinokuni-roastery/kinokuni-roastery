@@ -191,9 +191,9 @@ const TERMS = {
    blend：配合の内容。[ "豆の名前", 割合(%) ] を並べます。合計100にしてください。 */
 const STANDARD_BLENDS = [
   {
-    name: "こもれ日ブレンド",
+    name: "陽だまりブレンド",
     image: "images/blend/komorebi.webp",   // 商品の画像（差し替えるときはファイル名を変更）
-    imageAlt: "こもれ日の森",
+    imageAlt: "陽だまりの森",
     scene: "毎日の一杯が、ちょっと楽しみになる",   // キャッチフレーズ
     tasteConfirmed: false,   // 焙煎度・味わいのイメージが確定したら true に
     roast: 3,
@@ -210,7 +210,7 @@ const STANDARD_BLENDS = [
    howto：おすすめの飲み方 */
 const MILK_BLENDS = [
   {
-    name: "こもれ日ミルクブレンド",
+    name: "陽だまりミルクブレンド",
     image: "images/blend/milk.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "カフェオレとミルク",
     howto: "カフェオレ・カフェラテ",
@@ -237,7 +237,7 @@ const MILK_BLENDS = [
    ===================================================================== */
 const BLEND_PAGE = [
   {
-    name: "こもれ日ブレンド",
+    name: "陽だまりブレンド",
     label: "ブラックで楽しむ",
     kicker: "毎日の一杯が、ちょっと楽しみになる",   // 商品名の上に出る一言（不要なら ""）
     catchcopy: "",   // キャッチコピー（不要なら ""）
@@ -254,12 +254,12 @@ const BLEND_PAGE = [
       "バランスのよい味わいが好きな方"
     ],
     image: "images/blend/komorebi.webp",
-    imageAlt: "こもれ日ブレンドのコーヒー豆",
+    imageAlt: "陽だまりブレンドのコーヒー豆",
     prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
     shopLink: "https://kinokuni.stores.jp/items/standard-blend"   // ★仮のリンク
   },
   {
-    name: "こもれ日ミルクブレンド",
+    name: "陽だまりミルクブレンド",
     label: "ミルクと楽しむ",
     kicker: "ミルクと出会って、もっとおいしい",   // 商品名の上に出る一言（不要なら ""）
     catchcopy: "",
@@ -276,7 +276,7 @@ const BLEND_PAGE = [
       "コクのあるコーヒーが好きな方"
     ],
     image: "images/blend/milk.webp",
-    imageAlt: "こもれ日ミルクブレンドのコーヒー豆とミルク",
+    imageAlt: "陽だまりミルクブレンドのコーヒー豆とミルク",
     prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
     shopLink: "https://kinokuni.stores.jp/items/milk-blend"   // ★仮のリンク
   }
