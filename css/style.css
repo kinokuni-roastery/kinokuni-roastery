@@ -12,7 +12,7 @@
   --beige: #F0E8D8;        /* 木陰のベージュ（帯の背景） */
   --brown: #7A5537;        /* 焙煎豆のブラウン */
   --brown-light: #A9805A;  /* 明るいブラウン */
-  --gold: #C9A45C;         /* 木漏れ日の金色 */
+  --gold: #C9A45C;         /* こもれびの金色 */
   --ink: #2B2F27;          /* 文字色 */
   --muted: #62665A;        /* 補足の文字色 */
   --line: #DDD2BE;         /* 線の色 */
@@ -962,7 +962,7 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 /* シングルオリジン：トップ画像 */
 .so-hero-img { width: 100%; height: auto; border-radius: 24px; box-shadow: 0 10px 30px rgba(34, 55, 42, .15); }
 @media (max-width: 800px) { .so-hero-img { order: -1; border-radius: 18px; margin-bottom: 10px; } }
-/* ブレンドのページの画像：リスが切れないよう左寄せ（木漏れ日ブレンド） */
+/* ブレンドのページの画像：リスが切れないよう左寄せ（こもれびブレンド） */
 #blend-1 .bp-image img { object-position: left center; }
 
 /* 商品紹介：3つの入口（パソコン3列／スマートフォンは2列で「焙煎へのこだわり」を横長に） */
