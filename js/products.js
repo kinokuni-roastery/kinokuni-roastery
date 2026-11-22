@@ -200,7 +200,7 @@ const STANDARD_BLENDS = [
     flavor: ["キャラメル", "ミルクチョコ", "オレンジ"],
     comment: "香ばしく、まろやかに、いつもの暮らしに寄り添うコーヒー。苦みも酸味も強すぎず、すっきりした後味で、ブラックが苦手な方にも飲みやすい当店の定番ブレンドです。",
     blend: [ ["ブラジル"], ["タンザニア"], ["他"] ],   // 配合。割合を表示したいときは ["コロンビア", 60] のように数字を足します
-    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
+    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1300 }, { size: "400g", yen: 2400 } ],
     badge: "当店の定番",
     shopLink: ""
   }
@@ -219,7 +219,7 @@ const MILK_BLENDS = [
     flavor: ["ローストナッツ", "ミルクチョコ", "キャラメル"],
     comment: "牛乳や豆乳と合わせても、コーヒーの香ばしさとコクがしっかり残るように深めに焙煎しました。お砂糖を少し入れると、焼き菓子のようなやさしい甘さが広がります。",
     blend: [ ["ブラジル"], ["マンデリン"], ["他"] ],
-    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
+    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1300 }, { size: "400g", yen: 2400 } ],
     badge: "ミルクと相性抜群",
     shopLink: ""
   }
@@ -255,7 +255,7 @@ const BLEND_PAGE = [
     ],
     image: "images/blend/komorebi.webp",
     imageAlt: "きのくにブレンドのコーヒー豆",
-    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
+    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1300 }, { size: "400g", yen: 2400 } ],
     shopLink: "https://kinokuni.stores.jp/items/standard-blend"   // ★仮のリンク
   },
   {
@@ -277,7 +277,7 @@ const BLEND_PAGE = [
     ],
     image: "images/blend/milk.webp",
     imageAlt: "きのくにミルクブレンドのコーヒー豆とミルク",
-    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1200 }, { size: "400g", yen: 2200 } ],
+    prices: [ { size: "100g", yen: 700 }, { size: "200g", yen: 1300 }, { size: "400g", yen: 2400 } ],
     shopLink: "https://kinokuni.stores.jp/items/milk-blend"   // ★仮のリンク
   }
 ];
