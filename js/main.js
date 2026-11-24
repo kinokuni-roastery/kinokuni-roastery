@@ -169,7 +169,7 @@
     var terms = (item.terms || []).filter(function (t) { return dict[t]; }).map(function (t) {
       return '<details class="so-term"><summary>' + esc(t) + "ってなに？</summary>" +
         '<div class="so-term-body"><img src="images/squirrel.png" alt="" width="84" height="61" loading="lazy">' +
-        '<p class="so-term-bubble"><span class="so-term-name">きの子</span>' + esc(dict[t]) + "</p></div></details>";
+        '<p class="so-term-bubble"><span class="so-term-name">きの子</span>' + esc(dict[t]).replace(/\n/g, "<br>") + "</p></div></details>";
     }).join("");
     return '<article class="so-card" id="so-' + (i + 1) + '" data-taste="' + esc((item.taste || []).join(" ")) + '">' +
       '<div class="so-photo">' + cardImage(item).replace("card-figure", "card-figure so-figure") + "</div>" +
