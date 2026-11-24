@@ -208,7 +208,7 @@
         .map(function (r) { return "<div><dt>" + r[0] + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("");
       soDetail.innerHTML = "";
       soDetail.appendChild(card);
-      var abouts = [["About the origin", "産地について", item.originAbout], ["About the beans", "この豆について", item.beanAbout]]
+      var abouts = [["About the origin", item.originTitle || "産地について", item.originAbout], ["About the beans", "この豆について", item.beanAbout]]
         .filter(function (a) { return a[2]; });
       if (abouts.length) {
         var ab = document.createElement("section");
