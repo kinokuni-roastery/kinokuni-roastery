@@ -1281,3 +1281,55 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .page-intro br.br-keep { display: inline; }
 .bp-name { font-size: min(27px, 7.6cqi); }
 .bp-name { font-size: min(27px, 8.4cqi); }
+
+/* シングルオリジン：「くわしく見る」と商品紹介ページ */
+.so-more { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; margin-top: 2px; padding: 8px 18px;
+  border: 1.5px solid var(--forest); border-radius: 999px; color: var(--forest); font-family: var(--font-round); font-weight: 500;
+  font-size: 15px; text-decoration: none; background: var(--white, #fff); }
+.so-more:hover, .so-more:focus-visible { background: #EEF6EC; }
+.so-detail-section { padding-top: 32px; }
+.so-detail-card { max-width: 980px; margin: 0 auto; }
+@media (min-width: 801px) {
+  .so-detail-card { display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 10fr); align-items: start; }
+  .so-detail-card .so-photo { aspect-ratio: auto; background: none; height: 100%; }
+  .so-detail-card .so-photo img { position: sticky; top: 96px; }
+  .so-detail-card .so-body { padding: 28px 30px 30px; }
+}
+.so-detail-card .so-name { font-size: clamp(22px, 2.6vw, 28px); }
+.so-origin-info { max-width: 980px; margin: 28px auto 0; background: var(--white, #fff); border: 1px solid var(--line); border-radius: 24px; padding: 24px 26px; }
+.so-origin-title { display: grid; gap: 2px; font-family: var(--font-title); font-weight: 600; font-size: 22px; color: var(--forest); margin: 0 0 14px; }
+.so-origin-title .section-en { margin: 0; }
+.so-origin-info dl { display: grid; gap: 0; margin: 0; }
+.so-origin-info dl > div { display: grid; grid-template-columns: 7.5em 1fr; gap: 12px; padding: 12px 0; border-top: 1px dashed var(--line); }
+.so-origin-info dl > div:first-child { border-top: 0; }
+.so-origin-info dt { font-size: 14px; color: var(--brown); }
+.so-origin-info dd { margin: 0; font-size: 15.5px; line-height: 1.7; }
+.so-others { max-width: 980px; margin: 44px auto 0; }
+.so-others-title { font-family: var(--font-round); font-weight: 500; font-size: 18px; color: var(--forest); margin: 0 0 14px; }
+.so-others ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.so-others a { display: grid; gap: 6px; text-decoration: none; color: var(--forest); font-family: var(--font-round); font-weight: 500; text-align: center; }
+.so-others img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); }
+.so-back { max-width: 980px; margin: 32px auto 0; text-align: center; }
+.so-back a { color: var(--forest); font-family: var(--font-round); }
+@media (max-width: 800px) {
+  .so-others ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .so-origin-info { padding: 20px 18px; }
+  .so-origin-info dl > div { grid-template-columns: 6.5em 1fr; gap: 10px; }
+}
+@media (min-width: 801px) {
+  .so-detail-card .so-photo { display: block; height: auto; align-self: stretch; }
+  .so-detail-card .so-photo .card-figure, .so-detail-card .so-photo img { position: sticky; top: 110px; height: auto; width: 100%; }
+}
+.so-others img { object-position: center 80%; }
+@media (min-width: 801px) {
+  .so-detail-card .so-photo { display: block !important; height: auto !important; aspect-ratio: auto !important; background: none !important; }
+  .so-detail-card .so-photo .card-figure { display: block !important; height: auto !important; position: sticky; top: 110px; }
+  .so-detail-card .so-photo img { position: static; height: auto !important; max-height: none !important; }
+}
+@media (min-width: 801px) { .so-detail-card .so-photo .card-figure { position: relative !important; top: 0 !important; } }
+/* 商品紹介ページ：画像を上に大きく、その下に説明（パソコンも1列） */
+@media (min-width: 801px) {
+  .so-detail-card { display: flex; flex-direction: column; max-width: 760px; }
+  .so-detail-card .so-body { padding: 30px 40px 36px; }
+  .so-origin-info, .so-others, .so-back { max-width: 760px; }
+}

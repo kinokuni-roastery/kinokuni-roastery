@@ -38,13 +38,14 @@ const SINGLE_ORIGINS = [
     image: "images/origins/brazil.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "ブラジルのコーヒー農園",
     country: "ブラジル",
+    slug: "brazil",   // 商品紹介ページのファイル名（origin-brazil.html）
     specialty: true,   // スペシャルティコーヒーの印を表示する（表示しないときは false）
-    farm: "",          // 農園名など（分かれば）
+    farm: "",          // 生産者・農園・集買所など（分かれば）
     taste: [],         // 味わいの分類："すっきり" "まろやか" "甘み" "コク" から選んで入れると「味わいから選ぶ」で絞り込めます（例：["まろやか", "コク"]）
     tasteConfirmed: true,    // 焙煎度・味わいのイメージ・紹介文が確定したら true に（false の間は「仮」と表示されます）
-    region: "",
-    altitude: "",
-    process: "",
+    region: "セラード地区",
+    altitude: "850〜1,050m",
+    process: "ドライド・オン・ツリー（樹上完熟）",
     variety: "",
     roast: 3,
     flavor: ["ナッツ", "チョコレート", "黒糖"],
@@ -65,14 +66,15 @@ const SINGLE_ORIGINS = [
     image: "images/origins/ethiopia.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "エチオピアのコーヒーの実とジャバナ（伝統のコーヒーポット）",
     country: "エチオピア",
+    slug: "ethiopia",   // 商品紹介ページのファイル名（origin-ethiopia.html）
     specialty: true,   // スペシャルティコーヒーの印を表示する（表示しないときは false）
-    farm: "",          // 農園名など（分かれば）
+    farm: "アメデラロ（集買所）",          // 農園名など（分かれば）
     taste: [],         // 味わいの分類："すっきり" "まろやか" "甘み" "コク" から選んで入れると「味わいから選ぶ」で絞り込めます（例：["まろやか", "コク"]）
     tasteConfirmed: true,    // 焙煎度・味わいのイメージ・紹介文が確定したら true に（false の間は「仮」と表示されます）
-    region: "イルガチェフェ地区",
-    altitude: "",
-    process: "ナチュラル",
-    variety: "",
+    region: "イルガチェフェ（コンガ地区）",
+    altitude: "1,750〜2,300m",
+    process: "ナチュラル（天日乾燥）",
+    variety: "地場品種",
     roast: 1,
     flavor: ["ベリー", "ジャスミン", "完熟果実"],
     comment: "",
@@ -92,13 +94,14 @@ const SINGLE_ORIGINS = [
     image: "images/origins/indonesia.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "スマトラ島のトバ湖とバタックの伝統家屋",
     country: "インドネシア",
+    slug: "indonesia",   // 商品紹介ページのファイル名（origin-indonesia.html）
     specialty: true,   // スペシャルティコーヒーの印を表示する（表示しないときは false）
-    farm: "",          // 農園名など（分かれば）
+    farm: "ボルコピ社",          // 農園名など（分かれば）
     taste: [],         // 味わいの分類："すっきり" "まろやか" "甘み" "コク" から選んで入れると「味わいから選ぶ」で絞り込めます（例：["まろやか", "コク"]）
     tasteConfirmed: true,    // 焙煎度・味わいのイメージ・紹介文が確定したら true に（false の間は「仮」と表示されます）
-    region: "スマトラ島",
-    altitude: "",
-    process: "",
+    region: "スマトラ島北部（トバ湖の南）",
+    altitude: "1,200〜1,450m",
+    process: "スマトラ式",
     variety: "",
     roast: 4,
     flavor: ["ダークチョコ", "ハーブ", "杉"],
@@ -119,13 +122,14 @@ const SINGLE_ORIGINS = [
     image: "images/origins/tanzania.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "キリマンジャロ山とサバンナ",
     country: "タンザニア",
+    slug: "tanzania",   // 商品紹介ページのファイル名（origin-tanzania.html）
     specialty: true,   // スペシャルティコーヒーの印を表示する（表示しないときは false）
-    farm: "",          // 農園名など（分かれば）
+    farm: "",          // 生産者・農園・集買所など（分かれば）
     taste: [],         // 味わいの分類："すっきり" "まろやか" "甘み" "コク" から選んで入れると「味わいから選ぶ」で絞り込めます（例：["まろやか", "コク"]）
     tasteConfirmed: true,    // 焙煎度・味わいのイメージ・紹介文が確定したら true に（false の間は「仮」と表示されます）
-    region: "ンゴロンゴロ",
-    altitude: "",
-    process: "",
+    region: "ンゴロンゴロ（オルデアーニ火山のふもと）",
+    altitude: "1,550〜1,850m",
+    process: "ウォッシュド（水洗式）",
     variety: "",
     roast: 3,
     flavor: ["柑橘", "黒すぐり", "ブラウンシュガー"],
@@ -146,14 +150,15 @@ const SINGLE_ORIGINS = [
     image: "images/origins/colombia.webp",   // 商品の画像（差し替えるときはファイル名を変更）
     imageAlt: "アンデス山脈と夜空",
     country: "コロンビア",
+    slug: "colombia",   // 商品紹介ページのファイル名（origin-colombia.html）
     specialty: false,   // スペシャルティコーヒーの印を表示する（表示しないときは false）
-    farm: "",          // 農園名など（分かれば）
+    farm: "",          // 生産者・農園・集買所など（分かれば）
     taste: [],         // 味わいの分類："すっきり" "まろやか" "甘み" "コク" から選んで入れると「味わいから選ぶ」で絞り込めます（例：["まろやか", "コク"]）
     tasteConfirmed: true,    // 焙煎度・味わいのイメージ・紹介文が確定したら true に（false の間は「仮」と表示されます）
     region: "",
     altitude: "",
-    process: "",
-    variety: "",
+    process: "ウォッシュド（水洗式）",
+    variety: "アラビカ種",
     roast: 3,
     flavor: ["キャラメル", "ナッツ", "ミルクチョコ"],
     comment: "",

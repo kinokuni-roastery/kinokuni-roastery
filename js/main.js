@@ -182,6 +182,7 @@
           item.recommend.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></div></div>" : "") +
         '<dl class="so-profile">' + roastCell(item) + "</dl>" +
         (terms ? '<div class="so-terms">' + terms + "</div>" : "") +
+        (item.slug ? '<a class="so-more" href="origin-' + esc(item.slug) + '.html">くわしく見る<span aria-hidden="true">→</span></a>' : "") +
         '<div class="so-foot">' +
           priceKari() + '<div class="so-prices">' + (item.prices || []).map(function (p) {
             return '<div class="so-price"><span>' + esc(p.size) + "</span><strong>" + Number(p.yen).toLocaleString("ja-JP") + "<small>円</small></strong></div>";
@@ -189,6 +190,38 @@
           '<a class="btn btn-primary so-btn" href="' + esc(link) + '" target="_blank" rel="noopener">商品を見る</a>' +
         "</div>" +
       "</div></article>";
+  }
+  /* 「シングルオリジン」商品紹介ページ（origin-〇〇.html） */
+  var soDetail = document.getElementById("so-detail");
+  if (soDetail && typeof SINGLE_ORIGINS !== "undefined") {
+    var slug = soDetail.getAttribute("data-slug");
+    var item = SINGLE_ORIGINS.filter(function (x) { return x.slug === slug; })[0];
+    if (item) {
+      var tmp = document.createElement("div");
+      tmp.innerHTML = soCard(item, SINGLE_ORIGINS.indexOf(item));
+      var card = tmp.firstChild;
+      var more = card.querySelector(".so-more"); if (more) more.parentNode.removeChild(more);
+      var nm = card.querySelector(".so-name"); if (nm) { var h = document.createElement("h2"); h.className = nm.className; h.innerHTML = nm.innerHTML; nm.parentNode.replaceChild(h, nm); }
+      card.className = "so-card so-detail-card"; card.removeAttribute("id");
+      var rows = [["国", item.country], ["地域", item.region], ["生産者など", item.farm], ["標高", item.altitude], ["品種", item.variety], ["精製方法", item.process]]
+        .filter(function (r) { return r[1]; })
+        .map(function (r) { return "<div><dt>" + r[0] + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("");
+      soDetail.innerHTML = "";
+      soDetail.appendChild(card);
+      if (rows) {
+        var info = document.createElement("section");
+        info.className = "so-origin-info";
+        info.innerHTML = '<h2 class="so-origin-title"><span class="section-en">Origin</span>産地の情報</h2><dl>' + rows + "</dl>";
+        soDetail.appendChild(info);
+      }
+    }
+    var others = document.getElementById("so-others");
+    if (others) {
+      others.innerHTML = SINGLE_ORIGINS.filter(function (x) { return x.slug && x.slug !== slug; }).map(function (x) {
+        return '<li><a href="origin-' + esc(x.slug) + '.html"><img src="' + esc(x.image) + '" alt="" loading="lazy">' +
+          '<span>' + esc(x.country) + "</span></a></li>";
+      }).join("");
+    }
   }
   var soList = document.getElementById("so-list");
   if (soList && typeof SINGLE_ORIGINS !== "undefined") {
