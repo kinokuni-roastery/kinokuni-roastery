@@ -1357,3 +1357,7 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .so-others .so-oth-pic img { position: relative; display: block; width: 100%; height: 100%; object-fit: contain; border: 0; border-radius: 0; aspect-ratio: auto; }
 .so-others a { grid-template-rows: auto auto; }
 .nowrap-chunk { display: inline-block; }
+/* 商品紹介ページ：見出しまわりのすき間を狭く */
+.origin-hero .page-hero-inner { padding-bottom: 12px; }
+.origin-hero .page-catch { margin-top: -4px; line-height: 1.6; }
+.origin-hero + .so-detail-section { padding-top: 12px; }
