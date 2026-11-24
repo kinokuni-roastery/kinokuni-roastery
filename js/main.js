@@ -228,7 +228,7 @@
     var others = document.getElementById("so-others");
     if (others) {
       others.innerHTML = SINGLE_ORIGINS.filter(function (x) { return x.slug && x.slug !== slug; }).map(function (x) {
-        return '<li><a href="origin-' + esc(x.slug) + '.html"><img src="' + esc(x.image) + '" alt="" loading="lazy">' +
+        return '<li><a href="origin-' + esc(x.slug) + '.html"><span class="so-oth-pic" style="background-image:url(\'' + esc(x.image) + '\')"><img src="' + esc(x.image) + '" alt="" loading="lazy"></span>' +
           '<span>' + esc(x.country) + "</span></a></li>";
       }).join("");
     }
