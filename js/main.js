@@ -214,7 +214,7 @@
         var ab = document.createElement("section");
         ab.className = "so-about";
         ab.innerHTML = abouts.map(function (a) {
-          return '<div class="so-about-block"><h2 class="so-origin-title"><span class="section-en">' + a[0] + "</span>" + a[1] + "</h2>" + String(a[2]).split("\n").map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + "</div>";
+          return '<div class="so-about-block"><h2 class="so-origin-title"><span class="section-en">' + a[0] + "</span></h2>" + String(a[2]).split("\n").map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + "</div>";
         }).join("");
         soDetail.appendChild(ab);
       }

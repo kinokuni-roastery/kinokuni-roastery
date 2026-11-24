@@ -1345,3 +1345,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 
 /* 商品紹介ページ：カードは画像だけ表示（名前・おすすめ・価格などは一覧ページで） */
 .so-detail-card .so-body { display: none !important; }
+.so-about .so-origin-title { margin-bottom: 10px; }
