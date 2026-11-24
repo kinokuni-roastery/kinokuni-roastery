@@ -1346,3 +1346,8 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 /* 商品紹介ページ：カードは画像だけ表示（名前・おすすめ・価格などは一覧ページで） */
 .so-detail-card .so-body { display: none !important; }
 .so-about .so-origin-title { margin-bottom: 10px; }
+/* ほかの産地：画像の文字が切れないよう、画像全体を表示 */
+.so-others img { aspect-ratio: auto; height: auto; object-fit: contain; }
+.so-others li { display: grid; }
+.so-others a { grid-template-rows: 1fr auto; }
+.so-others img { align-self: center; }
