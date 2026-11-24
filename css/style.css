@@ -1342,3 +1342,6 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 @media (max-width: 640px) { .so-about { padding: 20px 18px; } }
 @media (min-width: 801px) { .so-about { max-width: 760px; } }
 .so-about p + p { margin-top: 1em; }
+
+/* 商品紹介ページ：カードは画像だけ表示（名前・おすすめ・価格などは一覧ページで） */
+.so-detail-card .so-body { display: none !important; }
