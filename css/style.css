@@ -1356,3 +1356,4 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .so-others .so-oth-pic::before { content: ""; position: absolute; inset: -16px; background: inherit; filter: blur(10px) brightness(1.08) saturate(.9); }
 .so-others .so-oth-pic img { position: relative; display: block; width: 100%; height: 100%; object-fit: contain; border: 0; border-radius: 0; aspect-ratio: auto; }
 .so-others a { grid-template-rows: auto auto; }
+.nowrap-chunk { display: inline-block; }
