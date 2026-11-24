@@ -208,6 +208,16 @@
         .map(function (r) { return "<div><dt>" + r[0] + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("");
       soDetail.innerHTML = "";
       soDetail.appendChild(card);
+      var abouts = [["About the origin", "産地について", item.originAbout], ["About the beans", "この豆について", item.beanAbout]]
+        .filter(function (a) { return a[2]; });
+      if (abouts.length) {
+        var ab = document.createElement("section");
+        ab.className = "so-about";
+        ab.innerHTML = abouts.map(function (a) {
+          return '<div class="so-about-block"><h2 class="so-origin-title"><span class="section-en">' + a[0] + "</span>" + a[1] + "</h2><p>" + esc(a[2]) + "</p></div>";
+        }).join("");
+        soDetail.appendChild(ab);
+      }
       if (rows) {
         var info = document.createElement("section");
         info.className = "so-origin-info";
