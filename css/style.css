@@ -1361,3 +1361,5 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .origin-hero .page-hero-inner { padding-bottom: 12px; }
 .origin-hero .page-catch { margin-top: -4px; line-height: 1.6; }
 .origin-hero + .so-detail-section { padding-top: 12px; }
+/* 文中の軽い強調（太字＋うすいマーカー） */
+.soft-em { font-weight: 700; background: linear-gradient(transparent 62%, rgba(200, 160, 90, .32) 62%); padding: 0 1px; }
