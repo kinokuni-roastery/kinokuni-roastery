@@ -218,6 +218,16 @@
         }).join("");
         soDetail.appendChild(ab);
       }
+      // 購入ボックス（価格と購入ボタン。ボタンのリンク先は products.js の shopLink）
+      var foot = card.querySelector(".so-foot");
+      if (foot) {
+        var buy = document.createElement("section");
+        buy.className = "so-buy";
+        buy.innerHTML = '<h2 class="so-origin-title"><span class="section-en">Online Shop</span></h2>' +
+          '<p class="so-buy-name">' + esc(item.name) + "</p>" + foot.innerHTML;
+        var bb = buy.querySelector(".so-btn"); if (bb) bb.textContent = "購入する";
+        soDetail.appendChild(buy);
+      }
       if (rows) {
         var info = document.createElement("section");
         info.className = "so-origin-info";

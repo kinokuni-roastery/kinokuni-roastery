@@ -1363,3 +1363,10 @@ h1, h2, h3, .about-lead, .page-catch, .bp-catch, .card-kicker, .chooser-a, .hero
 .origin-hero + .so-detail-section { padding-top: 12px; }
 /* 文中の軽い強調（太字＋うすいマーカー） */
 .soft-em { font-weight: 700; background: linear-gradient(transparent 62%, rgba(200, 160, 90, .32) 62%); padding: 0 1px; }
+/* 商品紹介ページ：購入ボックス */
+.so-buy { max-width: 760px; margin: 28px auto 0; background: var(--white, #fff); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px 26px; display: grid; gap: 14px; }
+.so-buy .so-origin-title { margin-bottom: 0; }
+.so-buy-name { margin: 0; font-family: var(--font-mincho, serif); font-size: 19px; line-height: 1.5; color: var(--green-dark, #2E4A37); }
+.so-buy .price-kari { margin: 0; }
+.so-buy .so-btn { width: 100%; min-height: 52px; font-size: 16px; }
+@media (max-width: 640px) { .so-buy { padding: 20px 18px 22px; } }
