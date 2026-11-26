@@ -59,7 +59,7 @@ const SINGLE_ORIGINS = [
       "はじめてシングルオリジンを試す方",
       "毎日飲める、バランスのよい豆を探している方"
     ],
-    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1500 }, { size: "400g", yen: 2800 } ],
+    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1600 }, { size: "400g", yen: 3000 } ],
     badge: "はじめての方に",   // 目印のラベル（例："新入荷"）。不要なら "" のまま
     shopLink: ""                // この商品のSTORES商品ページURL。空ならショップのトップへ
   },
@@ -91,7 +91,7 @@ const SINGLE_ORIGINS = [
       "フルーティーな味わいが好きな方",
       "いつもとちがうコーヒーに出会いたい方"
     ],
-    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1500 }, { size: "400g", yen: 2800 } ],
+    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1600 }, { size: "400g", yen: 3000 } ],
     badge: "",
     shopLink: ""
   },
@@ -122,7 +122,7 @@ const SINGLE_ORIGINS = [
       "ゆっくり味わうコーヒーの時間がほしい方",
       "深煎りのコーヒーが好きな方"
     ],
-    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1500 }, { size: "400g", yen: 2800 } ],
+    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1600 }, { size: "400g", yen: 3000 } ],
     badge: "",
     shopLink: ""
   },
@@ -153,7 +153,7 @@ const SINGLE_ORIGINS = [
       "爽やかな酸味を楽しみたい方",
       "食事と一緒にコーヒーを楽しみたい方"
     ],
-    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1500 }, { size: "400g", yen: 2800 } ],
+    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1600 }, { size: "400g", yen: 3000 } ],
     badge: "",
     shopLink: ""
   },
@@ -184,7 +184,7 @@ const SINGLE_ORIGINS = [
       "夜や寝る前にもコーヒーを楽しみたい方",
       "妊娠中や授乳中でもコーヒーを楽しみたい方"
     ],
-    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1500 }, { size: "400g", yen: 2800 } ],
+    prices: [ { size: "100g", yen: 850 }, { size: "200g", yen: 1600 }, { size: "400g", yen: 3000 } ],
     badge: "カフェインレス",
     shopLink: ""
   }
